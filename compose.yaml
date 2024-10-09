@@ -13,7 +13,7 @@ services:
       dockerfile: Dockerfile
     command: bundle exec rails s -p 8888 -b '0.0.0.0'
     volumes:
-      - ./src:/app
+      - .:/app
       - app_bundle:/usr/local/bundle
     ports:
       - '8888:8888'
