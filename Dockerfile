@@ -11,4 +11,5 @@ COPY . /app
 
 RUN apt-get update && \
     apt-get install -y nodejs && \
-    rm -f tmp/pids/server.pid
+    rm -f tmp/pids/server.pid && \
+    apt-get install -y postgresql-client

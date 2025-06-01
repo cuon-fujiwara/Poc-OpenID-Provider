@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Doorkeeper::OpenidConnect.configure do
-  issuer 'http://localhost:3780'
+  issuer 'http://localhost:8888'
 
   signing_key File.read(Rails.root.join('jwtRS256.key'))
 
